@@ -1,0 +1,35 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel app/assets/javascripts/jsx -d app/assets/javascripts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryodelmar102/ToDo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryodelmar102/ToDo/issues"
+  },
+  "homepage": "https://github.com/ryodelmar102/ToDo#readme",
+  "dependencies": {
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  },
+  "babel": {
+    "plugins": ["transform-strict-mode"],
+    "presets": [
+      "react",
+      "es2015"
+
+    ]
+  }
+}
