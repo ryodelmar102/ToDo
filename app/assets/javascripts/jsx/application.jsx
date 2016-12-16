@@ -38,7 +38,7 @@ var List = React.createClass({
       <div>
         <div>{this.props.id}</div>
         <div>{this.props.text}</div>
-          <div>{this.props.plan_date}</div>
+        <div>{this.props.plan_date}</div>
         <div>{this.props.done}</div>
       </div>
     )
