@@ -8,10 +8,8 @@ class TodoController < ApplicationController
 	def create
 		text = params[:text]
 		plan_date = params[:plan_date]
-		todo = Todo.new
-		todo.text = text
-		todo.plan_date = plan_date
-		todo.save
+		new_todo = Todo.create(:text=>text, :plan_date=>plan_date)
+		render :json => new_todo
 	end
 
 	def edit
@@ -28,6 +26,7 @@ class TodoController < ApplicationController
 	def delete
 		todo = Todo.find(params[:id])
 		todo.destroy
+		render :json => {id:params[:id]}
 	end
 
 end

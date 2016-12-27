@@ -13,3 +13,24 @@
  *= require_tree .
  *= require_self
  */
+
+ .todo{
+   display:flex;
+   width:500px;
+ }
+.todoText{
+  flex:1;
+  border:1px solid;
+}
+.todoPlanDate{
+  flex:1;
+  border:1px solid;
+}
+.todoDone{
+  flex:1;
+  border:1px solid;
+}
+.components{
+  width:500px;
+  margin:0 auto;
+}
